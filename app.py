@@ -16,7 +16,7 @@ st.title("Sentiment Analysis App")
 
 user_input = st.text_area("Enter the text for sentiment analysis:")
 
-# Create a selectbox for choosing the sentiment analysis library and custom model
+# Create a selectbox for choosing the sentiment analysis library or the custom model
 library_info = {
     "TextBlob": "TextBlob is a simple library for processing textual data. It provides a sentiment analysis feature based on text polarity. TextBlob is easy to use and great for basic sentiment analysis tasks. The polarity in the TextBlob library is measured using a sentiment analysis approach that calculates the sentiment of a text as a numerical value within the range of -1 to 1. The polarity value indicates the sentiment of the text, with -1 representing a completely negative sentiment, 1 representing a completely positive sentiment, and 0 representing a neutral sentiment.",
     "VADER": "VADER (Valence Aware Dictionary and sEntiment Reasoner) is a sentiment analysis tool that uses a lexicon and rule-based approach to analyze text sentiment. It's widely used for social media sentiment analysis.",
