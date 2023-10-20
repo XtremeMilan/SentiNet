@@ -52,4 +52,4 @@ predictions = model.predict(embed_test).astype(int)
 
 print("Accuracy Score: ", accuracy_score(predictions,targets)*100)
 
-#model.save('./checkpoints/checkpoint')
+model.save('./checkpoints/checkpoint')
