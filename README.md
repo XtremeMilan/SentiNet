@@ -1,2 +1,2 @@
-# Sentiment-Analysis-Web-Application
-A Python-powered web application for effortless sentiment analysis of textual data.
+# SentiNet
+A Python-powered sentiment analysis web application for effortless sentiment analysis of textual data.
