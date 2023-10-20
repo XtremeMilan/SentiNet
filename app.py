@@ -12,7 +12,7 @@ embed = hub.load("https://tfhub.dev/google/universal-sentence-encoder/4")
 # Load the sentiment analysis model
 model = load_model('./checkpoints/checkpoint')
 
-st.title("Sentiment Analysis App")
+st.title("SentiNet")
 
 user_input = st.text_area("Enter the text for sentiment analysis:")
 
