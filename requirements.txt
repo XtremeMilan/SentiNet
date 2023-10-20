@@ -1,0 +1,9 @@
+streamlit
+nltk
+textblob
+vaderSentiment
+afinn
+tensorflow
+tensorflow_hub
+keras
+scikit-learn
