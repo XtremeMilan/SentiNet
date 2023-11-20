@@ -5,12 +5,8 @@ from nltk.sentiment import SentimentIntensityAnalyzer as NLTKSentimentIntensityA
 from afinn import Afinn
 import tensorflow_hub as hub
 from keras.models import load_model
-
-# Load the Universal Sentence Encoder
-embed = hub.load("https://tfhub.dev/google/universal-sentence-encoder/4")
-
-# Load the sentiment analysis model
-model = load_model('./checkpoints/checkpoint')
+import nltk
+nltk.download('vader_lexicon')
 
 st.title("SentiNet")
 
@@ -28,6 +24,12 @@ library_info = {
 selected_option = st.selectbox("Select Analysis Method", list(library_info.keys()))
 
 if selected_option == "Custom Model":
+    # Load the Universal Sentence Encoder
+    embed = hub.load("https://tfhub.dev/google/universal-sentence-encoder/4")
+
+    # Load the sentiment analysis model
+    model = load_model('./checkpoints/checkpoint')
+
     if st.button("Analyze Sentiment"):
         if user_input:
             # Vectorize the user's input using the Universal Sentence Encoder
